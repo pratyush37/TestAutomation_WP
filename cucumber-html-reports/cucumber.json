@@ -1,0 +1,218 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: Pratyush"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 128500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "To Validate the values accepted in different fields in My Profile Links",
+        "description": "",
+        "id": "wordpress-profile-validation;to-validate-the-values-accepted-in-different-fields-in-my-profile-links;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 249334000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11149729900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I entered the URL",
+            "match": {
+              "location": "stepDefinition.i_entered_the_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2540563300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I login with credentials",
+            "match": {
+              "location": "stepDefinition.i_login_with_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9121507400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I am redirected to the my Profile page of wordpress",
+            "match": {
+              "location": "stepDefinition.i_am_redirected_to_the_homepage_of_wordpress()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2042277400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I entered different values for \"www.abc.com\" , \"testsite abc\" in profile Links",
+            "match": {
+              "arguments": [
+                {
+                  "val": "www.abc.com",
+                  "offset": 32
+                },
+                {
+                  "val": "testsite abc",
+                  "offset": 48
+                }
+              ],
+              "location": "stepDefinition.i_entered_different_values_for_in_profile_Links(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@Sanity_01"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 118300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "To Validate the values accepted in different fields in My Profile Links",
+        "description": "",
+        "id": "wordpress-profile-validation;to-validate-the-values-accepted-in-different-fields-in-my-profile-links;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 4198190900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8173355100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I entered the URL",
+            "match": {
+              "location": "stepDefinition.i_entered_the_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2221879400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I login with credentials",
+            "match": {
+              "location": "stepDefinition.i_login_with_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11957673800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I am redirected to the my Profile page of wordpress",
+            "match": {
+              "location": "stepDefinition.i_am_redirected_to_the_homepage_of_wordpress()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1963343900,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I entered different values for \"www.abcd.com\" , \"dummy site\" in profile Links",
+            "match": {
+              "arguments": [
+                {
+                  "val": "www.abcd.com",
+                  "offset": 32
+                },
+                {
+                  "val": "dummy site",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinition.i_entered_different_values_for_in_profile_Links(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@Sanity_01"
+          }
+        ]
+      }
+    ],
+    "name": "Wordpress Profile validation",
+    "description": "",
+    "id": "wordpress-profile-validation",
+    "keyword": "Feature",
+    "uri": "myProfile.feature"
+  }
+]
