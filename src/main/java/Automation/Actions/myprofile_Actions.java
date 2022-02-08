@@ -35,15 +35,17 @@ public class myprofile_Actions extends SuiteBase {
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
-	public static boolean presenceOfURLonLinks(String URL , String Description) {
+	public static boolean presenceOfURLonLinks(String URL , String Description) throws InterruptedException {
+		boolean b = false;
+		Thread.sleep(2000);
 		List<WebElement> listOfURL= driver.findElements(By.xpath("//*[@class='profile-links__list']/li"));
 		for(WebElement element : listOfURL) {
 			if(element.getText().contains(URL) && element.getText().contains(Description)) {
+				b = true;
 				break;
 			}
-			continue;
 		}
-		return true;
+		return b;
 	}
 	
 	public static void flipToggle() {

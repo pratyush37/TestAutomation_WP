@@ -81,6 +81,8 @@ public class stepDefinition extends SuiteBase {
 	@When("^I clicked on Add Site$")
 	public void i_clicked_on_Add_Site() throws Throwable {
 		myprofile_Actions.ClickOnButton(MyProfile_PageObjects.addSiteBtn);
+		Thread.sleep(10000);
+		
 
 	}
 
@@ -132,5 +134,16 @@ public class stepDefinition extends SuiteBase {
 	public void i_validate_that_the_required_are_present_on_the_webpage(String Option) throws Throwable {
 		assertTrue(myprofile_Actions.optionPresentonmyProfile(Option));
 	}
+	
+	@When("^I clicked of delete \"([^\"]*)\" on the links section$")
+	public void i_clicked_of_delete_on_the_links_section(String URL) throws Throwable {
+		myprofile_Actions.deleteURLonLinks(URL);
+	}
+
+	@Then("^I validate that \"([^\"]*)\" with \"([^\"]*)\"is deleted successfully$")
+	public void i_validate_that_with_is_deleted_successfully(String URL, String Description) throws Throwable {
+		assertFalse(myprofile_Actions.presenceOfURLonLinks(URL, Description));
+	}
+
 
 }

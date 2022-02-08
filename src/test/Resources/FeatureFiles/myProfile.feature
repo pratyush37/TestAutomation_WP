@@ -41,10 +41,26 @@ Feature: Wordpress Profile validation
     |www.abc.com| testsite abc | 
     |www.abcd.com| dummy site|
 
-
+@Reg_TC04
+    Scenario Outline: To Validate the delete functionality in My Profile - Links Section
+    Given I entered the URL
+    When I login with credentials
+    Then I am redirected to the my Profile page of wordpress
+    When I clicked on Add button on Profile Links
+    And I clicked on Add URL button 
+    And  I entered different values for "<URL>" , "<URLDescription>" in profile Links
+    And I clicked on Add Site
+    Then I validate that Site is added successfully with "<URL>" , "<URLDescription>"
+    When I clicked of delete "<URL>" on the links section
+    Then I validate that "<URL>" with "<Description>"is deleted successfully
+    
+    Examples:
+		|URL|URLDescription|
+    |www.abc.com| testsite abc | 
+    |www.abcd.com| dummy site|
 
     
-	@Reg_TC04
+	@Reg_TC05
     Scenario: To Validate the Toggle of Hide my Gravatar Profile
     Given I entered the URL
     When I login with credentials
@@ -55,7 +71,7 @@ Feature: Wordpress Profile validation
     Then I validate that values are saved and confirmation message "Settings saved successfully!" is populated  
     
     
-    @Reg_TC05
+    @Reg_TC06
     Scenario: To Validate the values accepted in  in My Profile - Links Add Wordpress Section
     Given I entered the URL
     When I login with credentials
@@ -67,7 +83,7 @@ Feature: Wordpress Profile validation
     Then I validate that Site is added successfully with URL "myauttest101.wordpress.com" and description "Testing Website"
     
     
-    @Reg_TC06
+    @Reg_TC07
     Scenario Outline: To verify all the links present below the My Profile Link
     Given I entered the URL
     When I login with credentials
@@ -76,14 +92,14 @@ Feature: Wordpress Profile validation
     
     Examples:
     |Options|
-    |My Profile1|
+    |My Profile|
     |Account Settings|
     |Purchases|
-  #  |Security|
-  #  |Privacy|
-   # |Manage Blogs|
-   # |Notification Settings|
-  #  |Blocked Sites|
-   # |Get Apps|
+    |Security|
+    |Privacy|
+    |Manage Blogs|
+    |Notification Settings|
+    |Blocked Sites|
+    |Get Apps|
 
     

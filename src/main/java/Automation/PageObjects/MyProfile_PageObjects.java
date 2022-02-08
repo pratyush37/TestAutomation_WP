@@ -38,7 +38,7 @@ public class MyProfile_PageObjects {
 	@FindBy(how = How.XPATH, using = "//*[@class='form-text-input profile-links-add-other__title']")
 	public static WebElement addDescriptionBox;
 	
-	@FindBy(how = How.XPATH, using = "//*[@class='button profile-links-add-other__add form-button is-primary']")
+	@FindBy(how = How.XPATH, using = "//*[contains(@class,'button profile-links-add-other__add form-button is-primary')]")
 	public static WebElement addSiteBtn;
 	
 	@FindBy(how = How.XPATH, using = "//*[@class='button profile-links-add-other__cancel form-button']")
