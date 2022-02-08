@@ -6,245 +6,328 @@ formatter.feature({
       "value": "#Author: Pratyush"
     }
   ],
-  "line": 3,
+  "line": 4,
   "name": "Wordpress Profile validation",
   "description": "",
   "id": "wordpress-profile-validation",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@Regression_MyProfile"
+    }
+  ]
 });
 formatter.scenarioOutline({
-  "line": 23,
-  "name": "To Validate the values accepted in different fields in My Profile Links",
+  "line": 71,
+  "name": "To verify all the links present below the My Profile Link",
   "description": "",
-  "id": "wordpress-profile-validation;to-validate-the-values-accepted-in-different-fields-in-my-profile-links",
+  "id": "wordpress-profile-validation;to-verify-all-the-links-present-below-the-my-profile-link",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 22,
-      "name": "@Sanity_01"
+      "line": 70,
+      "name": "@Reg_TC06"
     }
   ]
 });
 formatter.step({
-  "line": 24,
+  "line": 72,
   "name": "I entered the URL",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 25,
+  "line": 73,
   "name": "I login with credentials",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.step({
-  "line": 26,
+  "line": 74,
   "name": "I am redirected to the my Profile page of wordpress",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 27,
-  "name": "I entered different values for \"\u003cURL\u003e\" , \"\u003cURLDescription\u003e\" in profile Links",
+  "line": 75,
+  "name": "I validate that the required \"\u003cOptions\"\u003e are present on the webpage",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 29,
+  "line": 77,
   "name": "",
   "description": "",
-  "id": "wordpress-profile-validation;to-validate-the-values-accepted-in-different-fields-in-my-profile-links;",
+  "id": "wordpress-profile-validation;to-verify-all-the-links-present-below-the-my-profile-link;",
   "rows": [
     {
       "cells": [
-        "URL",
-        "URLDescription"
+        "Options"
       ],
-      "line": 30,
-      "id": "wordpress-profile-validation;to-validate-the-values-accepted-in-different-fields-in-my-profile-links;;1"
+      "line": 78,
+      "id": "wordpress-profile-validation;to-verify-all-the-links-present-below-the-my-profile-link;;1"
     },
     {
       "cells": [
-        "www.abc.com",
-        "testsite abc"
+        "My Profile1"
       ],
-      "line": 31,
-      "id": "wordpress-profile-validation;to-validate-the-values-accepted-in-different-fields-in-my-profile-links;;2"
+      "line": 79,
+      "id": "wordpress-profile-validation;to-verify-all-the-links-present-below-the-my-profile-link;;2"
     },
     {
       "cells": [
-        "www.abcd.com",
-        "dummy site"
+        "Account Settings"
       ],
-      "line": 32,
-      "id": "wordpress-profile-validation;to-validate-the-values-accepted-in-different-fields-in-my-profile-links;;3"
+      "line": 80,
+      "id": "wordpress-profile-validation;to-verify-all-the-links-present-below-the-my-profile-link;;3"
+    },
+    {
+      "cells": [
+        "Purchases"
+      ],
+      "line": 81,
+      "id": "wordpress-profile-validation;to-verify-all-the-links-present-below-the-my-profile-link;;4"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 128500,
+  "duration": 79301,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 31,
-  "name": "To Validate the values accepted in different fields in My Profile Links",
+  "line": 79,
+  "name": "To verify all the links present below the My Profile Link",
   "description": "",
-  "id": "wordpress-profile-validation;to-validate-the-values-accepted-in-different-fields-in-my-profile-links;;2",
+  "id": "wordpress-profile-validation;to-verify-all-the-links-present-below-the-my-profile-link;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 22,
-      "name": "@Sanity_01"
+      "line": 70,
+      "name": "@Reg_TC06"
+    },
+    {
+      "line": 3,
+      "name": "@Regression_MyProfile"
     }
   ]
 });
 formatter.step({
-  "line": 24,
+  "line": 72,
   "name": "I entered the URL",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 25,
+  "line": 73,
   "name": "I login with credentials",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.step({
-  "line": 26,
+  "line": 74,
   "name": "I am redirected to the my Profile page of wordpress",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 27,
-  "name": "I entered different values for \"www.abc.com\" , \"testsite abc\" in profile Links",
-  "matchedColumns": [
-    0,
-    1
-  ],
+  "line": 75,
+  "name": "I validate that the required \"\u003cOptions\"\u003e are present on the webpage",
   "keyword": "And "
 });
 formatter.match({
   "location": "stepDefinition.i_entered_the_url()"
 });
 formatter.result({
-  "duration": 11149729900,
+  "duration": 7357274500,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefinition.i_login_with_credentials()"
 });
 formatter.result({
-  "duration": 2540563300,
+  "duration": 1769640599,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefinition.i_am_redirected_to_the_homepage_of_wordpress()"
 });
 formatter.result({
-  "duration": 9121507400,
+  "duration": 8622213599,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "www.abc.com",
-      "offset": 32
-    },
-    {
-      "val": "testsite abc",
-      "offset": 48
+      "val": "\u003cOptions",
+      "offset": 30
     }
   ],
-  "location": "stepDefinition.i_entered_different_values_for_in_profile_Links(String,String)"
+  "location": "stepDefinition.i_validate_that_the_required_are_present_on_the_webpage(String)"
 });
 formatter.result({
-  "duration": 2042277400,
-  "status": "passed"
+  "duration": 161567700,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat Automation.StepDef.stepDefinition.i_validate_that_the_required_are_present_on_the_webpage(stepDefinition.java:133)\r\n\tat ✽.And I validate that the required \"\u003cOptions\"\u003e are present on the webpage(myProfile.feature:75)\r\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 249334000,
+  "duration": 4453983700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 118300,
+  "duration": 39099,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 32,
-  "name": "To Validate the values accepted in different fields in My Profile Links",
+  "line": 80,
+  "name": "To verify all the links present below the My Profile Link",
   "description": "",
-  "id": "wordpress-profile-validation;to-validate-the-values-accepted-in-different-fields-in-my-profile-links;;3",
+  "id": "wordpress-profile-validation;to-verify-all-the-links-present-below-the-my-profile-link;;3",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 22,
-      "name": "@Sanity_01"
+      "line": 70,
+      "name": "@Reg_TC06"
+    },
+    {
+      "line": 3,
+      "name": "@Regression_MyProfile"
     }
   ]
 });
 formatter.step({
-  "line": 24,
+  "line": 72,
   "name": "I entered the URL",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 25,
+  "line": 73,
   "name": "I login with credentials",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.step({
-  "line": 26,
+  "line": 74,
   "name": "I am redirected to the my Profile page of wordpress",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 27,
-  "name": "I entered different values for \"www.abcd.com\" , \"dummy site\" in profile Links",
-  "matchedColumns": [
-    0,
-    1
-  ],
+  "line": 75,
+  "name": "I validate that the required \"\u003cOptions\"\u003e are present on the webpage",
   "keyword": "And "
 });
 formatter.match({
   "location": "stepDefinition.i_entered_the_url()"
 });
 formatter.result({
-  "duration": 8173355100,
+  "duration": 6555014001,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefinition.i_login_with_credentials()"
 });
 formatter.result({
-  "duration": 2221879400,
+  "duration": 1725202099,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefinition.i_am_redirected_to_the_homepage_of_wordpress()"
 });
 formatter.result({
-  "duration": 11957673800,
+  "duration": 8153046100,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "www.abcd.com",
-      "offset": 32
-    },
-    {
-      "val": "dummy site",
-      "offset": 49
+      "val": "\u003cOptions",
+      "offset": 30
     }
   ],
-  "location": "stepDefinition.i_entered_different_values_for_in_profile_Links(String,String)"
+  "location": "stepDefinition.i_validate_that_the_required_are_present_on_the_webpage(String)"
 });
 formatter.result({
-  "duration": 1963343900,
-  "status": "passed"
+  "duration": 127676401,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat Automation.StepDef.stepDefinition.i_validate_that_the_required_are_present_on_the_webpage(stepDefinition.java:133)\r\n\tat ✽.And I validate that the required \"\u003cOptions\"\u003e are present on the webpage(myProfile.feature:75)\r\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 4198190900,
+  "duration": 4420401999,
   "status": "passed"
 });
+formatter.before({
+  "duration": 71300,
+  "status": "passed"
 });
+formatter.scenario({
+  "line": 81,
+  "name": "To verify all the links present below the My Profile Link",
+  "description": "",
+  "id": "wordpress-profile-validation;to-verify-all-the-links-present-below-the-my-profile-link;;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 70,
+      "name": "@Reg_TC06"
+    },
+    {
+      "line": 3,
+      "name": "@Regression_MyProfile"
+    }
+  ]
+});
+formatter.step({
+  "line": 72,
+  "name": "I entered the URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 73,
+  "name": "I login with credentials",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 74,
+  "name": "I am redirected to the my Profile page of wordpress",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 75,
+  "name": "I validate that the required \"\u003cOptions\"\u003e are present on the webpage",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepDefinition.i_entered_the_url()"
+});
+formatter.result({
+  "duration": 6506525600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefinition.i_login_with_credentials()"
+});
+formatter.result({
+  "duration": 1819756299,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefinition.i_am_redirected_to_the_homepage_of_wordpress()"
+});
+formatter.result({
+  "duration": 7935895599,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "\u003cOptions",
+      "offset": 30
+    }
+  ],
+  "location": "stepDefinition.i_validate_that_the_required_are_present_on_the_webpage(String)"
+});
+formatter.result({
+  "duration": 130208300,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat Automation.StepDef.stepDefinition.i_validate_that_the_required_are_present_on_the_webpage(stepDefinition.java:133)\r\n\tat ✽.And I validate that the required \"\u003cOptions\"\u003e are present on the webpage(myProfile.feature:75)\r\n",
+  "status": "failed"
+});
+formatter.embedding("image/png", "embedded2.png");

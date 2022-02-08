@@ -29,6 +29,8 @@ public class MyProfile_PageObjects {
 	@FindBy(how = How.XPATH, using = "//button[contains(text(),'Add URL')]")
 	public static WebElement addURLBtn;
 	
+	@FindBy(how = How.XPATH, using = "//button[contains(text(),'Add WordPress Site')]")
+	public static WebElement addWordPressBtn;
 	
 	@FindBy(how = How.XPATH, using = "//*[@class='form-text-input profile-links-add-other__value']")
 	public static WebElement addURLBox;
@@ -45,5 +47,12 @@ public class MyProfile_PageObjects {
 	@FindBy(how = How.XPATH, using = "//*[@class='notice__text']")
 	public static WebElement successMessage;
 	
+	@FindBy(how = How.XPATH, using = "//*[contains(@class,'components-form-toggle')]")
+	public static WebElement toggleChecker;
 	
+	@FindBy(how = How.XPATH, using = "//*[@class='profile-links-add-wordpress__checkbox form-checkbox']")
+	public static WebElement wordpressCheckbox;
+	
+	@FindBy(how = How.XPATH, using = "//*[@class='button form-button is-primary']")
+	public static WebElement addwordpressSite;
 }

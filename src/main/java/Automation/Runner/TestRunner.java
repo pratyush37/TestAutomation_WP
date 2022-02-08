@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 		features = "src/test/Resources/FeatureFiles"
 		,glue={"Automation"}
 		,monochrome = true
-				,tags = {"@Sanity_01"}
+				,tags = {"@Reg_TC06"}
 				,dryRun = false
 				,format = { "pretty","html:cucumber-html-reports",
                 "json:cucumber-html-reports/cucumber.json" ,
