@@ -69,18 +69,14 @@ public class myprofile_Actions extends SuiteBase {
 	}
 	
 	public static boolean optionPresentonmyProfile(String Option) {
-		boolean b = false;
 		List<WebElement> listOfURL= driver.findElements(By.xpath("//*[@class='sidebar__menu']//span"));
 		for(WebElement element : listOfURL) {
-			System.out.println(element.getText());
 			if(element.getText().contains(Option)) {
-
-				b = true;
 				break;
 			}
 			continue;
 		}
-		return b;
+		return true;
 	}
 	
 }
